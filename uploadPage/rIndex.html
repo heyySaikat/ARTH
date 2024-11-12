@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Photo</title>
+    <link rel="stylesheet" href="rStyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">Upload media here</div>
+      <form id="uploadForm">
+        <label for="photoUpload">Choose a photo:</label>
+        <input
+          type="file"
+          id="photoUpload"
+          name="photoUpload"
+          accept="image/*"
+          required
+        />
+      </form>
+      <div class="commentSec">Leave a Comment</div>
+      <textarea
+        id="commentBox"
+        rows="4"
+        placeholder="Share your thoughts on global warming..."
+      ></textarea>
+      <!-- <button onclick="submitComment()">Submit Comment</button> -->
+      <!-- <div id="commentDisplay"></div> -->
+      <button id="SignBtn">Upload</button>
+    </div>
+
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.19/auth0-spa-js.production.js"></script>
+    <script src="rScript.js"></script>
+    <!-- Link to JavaScript file -->
+  </body>
+</html>

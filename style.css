@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Dirt&display=swap");
+
+* {
+  cursor: default;
+  /* overflow: hidden; */
+  --accentColor: rgb(59, 125, 59);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #232323;
+  color: white;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+  margin: auto;
+  height: 65px;
+  display: flex;
+  padding: 0 180px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--accentColor);
+}
+
+nav .center {
+  font-size: 50px;
+  font-family: "Rubik Dirt", system-ui;
+}
+
+nav .right {
+  border-radius: 30px;
+  position: relative;
+  right: 370px;
+  height: 75%;
+  width: 170px;
+  /* background-color: rgba(255, 255, 255, 0.269); */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav .right img {
+  height: 40px;
+}
+
+#uploadBtn{
+  cursor: pointer;
+}
+
+#signBtn{
+  cursor: pointer;
+}
+
+#leaderBrd{
+  cursor: pointer;
+}
+
+
+.hidden {
+    display: none !important;
+  }
+  
+  .pop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+  }
+  
+  .heading {
+    font-size: 50px;
+    font-family: "Rubik Dirt", system-ui;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 30px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    background: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    height: 37px;
+    width: 30px;
+  }
+  
+  .bar-chart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 600px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .bar {
+    width: 15%;
+    background-color: #4caf50;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bar::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #ffffff;
+  }
+  
+  .bar:hover {
+    background-color: #45a049;
+  }
+  .bar .profile {
+    height: 70px;
+    width: 70px;
+    border: 2px solid white;
+    position: absolute;
+    top: -95px;
+    left: 7px;
+    border-radius: 50%;
+  }
+
+  .pic1{
+    background-image: url('/resoucesImg/profile1.jpeg');
+    background-size: cover;
+  }
+
+  .pic2{
+    background-image: url('/resoucesImg/profile2.avif');
+    background-size: cover;
+  }
+
+  .pic3{
+    background-image: url('/resoucesImg/profile3.jpg');
+    background-size: cover;
+  }
+
+  .pic4{
+    background-image: url('/resoucesImg/profile4.jpg');
+    background-size: cover;
+  }
+
+  .pic5{
+    background-image: url('/resoucesImg/profile5.jpg');
+    background-size: cover;
+  }
+
+  .bar .name {
+    position: relative;
+    top: -25px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+  }
+  
+
+.imgContainer {
+  padding: 90px 0 20px 0;
+  width: 80vw;
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-image: url("resoucesImg/img1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  padding-top: 120%;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card2 {
+  background-image: url("resoucesImg/img2.jpeg");
+}
+
+.card3 {
+  background-image: url("resoucesImg/img3.webp");
+}
+
+.card4 {
+  background-image: url("resoucesImg/img4.jpg");
+}
+
+.card5 {
+  background-image: url("resoucesImg/img5.jpg");
+}
+
+.card6 {
+  background-image: url("resoucesImg/img6.jpg");
+}
+
+.card7 {
+  background-image: url("resoucesImg/img7.jpg");
+}
+
+.card8 {
+  background-image: url("resoucesImg/img8.jpeg");
+}
+
+.footImg {
+  padding: 0 15px;
+  margin: 3px auto;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  width: 80%;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(15px);
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.card .footImg .likes .likesLogo img {
+  height: 30px;
+}
+
+.comments {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.card .footImg .comments .commentsLogo img {
+  height: 24px;
+}
